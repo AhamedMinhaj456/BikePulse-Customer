@@ -1,6 +1,5 @@
 import React from 'react';
 import './ShopHome.css';
-import HeroSection from './HeroSection/HeroSection';
 import SearchForm from './SearchForm/SearchForm';
 import LastHolidaysSection from './LastHolidaysSection/LastHolidays';
 import ShopMission from './ShopMission/ShopMission';
@@ -14,7 +13,7 @@ function ShopHome() {
     return (
         <div className='home-page'>
             <ShopDetails/>
-            {/* <HeroSection /> */}
+            
             {/* <SearchForm /> */}
             <LastHolidaysSection />
             <div className="my-4 my-sm-5">
