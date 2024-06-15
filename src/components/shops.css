@@ -1,0 +1,280 @@
+.image-section {
+    width: 100%;
+  }
+  
+  .full-width-image {
+    width: 100%;
+    height: auto; 
+  }
+
+  .cards-container-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.details-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.button-view{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+  .main-cards-container{
+    display: flex;
+  }
+  .main-cards{
+ 
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        background-color: #CAE4F2;
+        border-radius: 10px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+  }
+  .main-cards h2 {
+    font-size: 24px; 
+    color: #000000;
+    font-weight: 700; 
+    font-family: "Poppins", sans-serif;
+  }
+
+  .line{
+    width: 50%; 
+    height: 3px;
+    background-color: #0E0546;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .come-again-text{
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 40px;
+    
+  }
+  .top-rectangle {
+    width: 400px;
+    background-color: #DDE7F8;
+    border-radius: 10px;
+    margin-left: 40px;
+    height: 200px;
+}
+
+.bottom-rectangle {
+    width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 40px;
+    height: 400px;
+}
+.top-rectangle,
+.bottom-rectangle {
+    flex: 1;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content img {
+    width: 50px; 
+    height: auto;
+}
+.bottom-rectangle{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  .sub-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rating-container{
+  display: flex;
+
+}
+
+.stars2{
+  margin-left: 50px;
+  
+}
+
+.velocare-get-direction{
+  display: flex;
+}
+
+.view-text{
+  font-family: "Poppins", sans-serif;
+  color: #03045e;
+  font-weight: 600;
+  margin-left: 40%;
+  cursor: pointer;
+}
+.see-all-text{
+  font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.sub-cards-row2,
+.sub-cards-row3,
+.sub-cards-row4
+{
+  margin-top: 5%;
+ 
+}
+
+.show-more-button{
+  width: 10%;
+  padding: 1%;
+  border: none;
+  border-radius: 15px;
+ background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  margin-left: 45%;
+  margin-top: 3%;
+
+}
+@media only screen and (max-width: 768px) {
+  .sub-cards {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .sub-cards-container {
+    margin-bottom: 20px; 
+  }
+
+  .rectangle-container {
+    height: auto;
+    margin: 10px 0; 
+  }
+
+  .show-more-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 40%;
+  }
+}
+
+.shop-bottom-text{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-top: 3%;
+}
+
+.search-container-new {
+  background-image: url('../assets/bike9.jpg'); /* replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.search-content-new {
+  padding: 2rem;
+}
+
+.search-content-new h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-bar-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.search-form-new {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust the max width as needed */
+}
+
+.search-input-new {
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem; /* Add extra padding to the right to make room for the button */
+  border-radius: 25px;
+  border: none;
+  width: 100%; /* Ensure the input takes up the full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.search-button-new {
+  position: absolute;
+  right: 10px; /* Position the button inside the input */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the button */
+  background-color: transparent !important; /* Ensure background is transparent */
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Remove any default padding */
+  width: 24px; /* Ensure the button is appropriately sized */
+  height: 24px; /* Ensure the button is appropriately sized */
+  display: flex;
+  align-items: center; /* Center the icon inside the button */
+  justify-content: center; /* Center the icon inside the button */
+}
+
+.search-button-new i {
+  font-size: 1rem;
+  color: black;
+}
+
+
+
+.location-new {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.location-new i {
+  margin-right: 0.5rem;
+}
+
+.footer-new {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+

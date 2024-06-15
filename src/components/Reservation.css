@@ -1,0 +1,66 @@
+/* Reservation.css */
+
+.reservation-input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+/* Additional style for select dropdown */
+
+
+/* Ensure consistent border style for all input types */
+.reservation-input[type="date"],
+.reservation-input[type="time"],
+.reservation-input[type="text"] {
+  border: 2px solid rgba(255, 255, 255, .2);
+}
+
+/* Placeholder color */
+.reservation-input::placeholder {
+  color: #999;
+}
+
+/* Other existing styles */
+.resrvation-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('../assets/backimg6.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.reservation-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.reservation-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f1eded;
+}
+
+.reservation-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background-color: #0056b3;
+}

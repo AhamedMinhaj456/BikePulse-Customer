@@ -1,0 +1,53 @@
+.home-body-text .circles-container {
+    display: flex;
+  }
+
+
+.circular-progress {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 35%;
+    @media (min-width: 768px) {
+        margin-top: 4%;
+        margin-left: 9%; 
+    }
+
+  }
+  
+  .circular-progress svg {
+    transform: rotate(-90deg);
+  }
+  
+  .circular-progress circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+  
+  .circular-progress .outer {
+    stroke: #e6e6e6; 
+  }
+  
+  .circular-progress .inner {
+    stroke: #151967; 
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset 2s ease; 
+  }
+  .circular-progress.animate .inner {
+    stroke-dashoffset: 0;
+  }
+  
+  .progress-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #151967 
+  }
+  
+.circular-progress + .circular-progress {
+    margin-left: 8%; 
+  }

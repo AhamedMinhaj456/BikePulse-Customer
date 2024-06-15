@@ -1,0 +1,44 @@
+/* Base styles */
+.reservation-history {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .reservation-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .reservation-details p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .reservation-history {
+      padding: 10px;
+    }
+    
+    .reservation-item {
+      padding: 8px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .reservation-history {
+      padding: 5px;
+    }
+    
+    .reservation-item {
+      padding: 6px;
+    }
+  }
+  

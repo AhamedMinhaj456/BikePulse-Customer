@@ -1,0 +1,95 @@
+.profile-settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-picture-settings {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture-settings img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+  }
+  
+  .profile-picture-settings button {
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .personal-details-setting,
+  .additional-info-settings,
+  .social-profiles,
+  .security-settings {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .security-settings button {
+    background-color: #0056b3;
+    margin-right: 10px;
+  
+  }
+  
+  .profile-settings-save {
+    width: 100%;
+    background-color: #0056b3;
+    margin-top: 10px;
+  }
+
+
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input[type="password"] {
+    padding-right: 30px; /* Space for the visibility icon */
+  }
+  
+  .password-input svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: black; /* Change icon color to black */
+  }
+  
