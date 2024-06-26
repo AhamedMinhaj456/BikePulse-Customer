@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Bike Pulse Customer Portal
+Welcome to the **Bike Pulse Customer Portal**! This portal is designed to provide a seamless experience for users to manage their bike reservations, view shop details, manage subscriptions, and make payments.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Bike Pulse Customer Portal is your central hub for all your biking needs. Our user-friendly interface ensures that all tasks are handled efficiently and effortlessly.
 
-In the project directory, you can run:
+## Access
 
-### `npm start`
+You can access the customer portal at the following URL:
+[https://bikepulse-customer.vercel.app/](https://bikepulse-customer.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Bike Reservation**: Reserve bikes from various shops.
+- **Shop Details**: View details of shops and the bikes they offer.
+- **Subscription Management**: Manage your subscription plans.
+- **Payment Management**: Manage and track your payments and transactions.
 
-### `npm test`
+## Additional Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Admin Website**: [Bike Pulse Admin Portal](https://bikepulse-admin.vercel.app/)
+- **Shop Website**: [Bike Pulse Shop Portal](#) *(Link to be updated)*
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Sign Up/Login**: Use your credentials to sign up or log in to the portal.
+2. **Dashboard**: After logging in, you will be directed to the dashboard, where you can get an overview of your activities.
+3. **Navigation**: Use the sidebar to navigate through different sections such as Reservations, Shops, Subscriptions, and Payments.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Support
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For any issues or assistance, please contact our support team at bikepulsereservation@gmail.com.
 
-### `npm run eject`
+## Contributions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We welcome feedback to improve the portal. If you have suggestions or would like to contribute, please reach out to us.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Thank you for using the Bike Pulse Customer Portal!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Note: The links to the Shop Website will be updated once they are available.*
