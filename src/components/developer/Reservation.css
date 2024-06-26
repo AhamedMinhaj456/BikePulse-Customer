@@ -1,0 +1,104 @@
+.resrvation-form-text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.personal-info,
+.bike-details,
+shop-details{
+    display: flex;
+}
+
+#bikebrand,
+#bikemodel,
+#bikeyear,
+#serialno,
+#availabledate,
+#availabletime{
+border-radius: 15px; 
+background-color: #F5FBFF;
+}
+
+.input-group-reserve:first-child input {
+    margin-right: 20%; 
+}
+.input-group-reserve{
+    margin-left: 5%;
+    flex-basis: calc(20% - 10px);
+    position: relative;
+    
+}
+.input-group-reserve input {
+    width: 100%; 
+    border: none;
+
+}
+
+.input-with-image{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.date{
+    position: absolute;
+    right: 7%; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8%;
+    height: auto;
+}
+.input-with-image select {
+    width: 100%; 
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border: none;
+}
+.comment-box-reserve{
+    width: 60%;
+    height: 30%; 
+    padding: 5%;
+    margin-top: 3%;
+    resize: vertical; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #F5FBFF;
+    margin-left: 3%;
+    outline: none;   
+}
+.submit-button-reserve{
+    width: 10%;
+    margin-left: 40%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 15px;
+   background-color: #C1E1F8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #03045E;
+}
+
+.reservation-container {
+    position: relative; /* Ensure relative positioning */
+}
+.reservation-background {
+    position: fixed; /* Fixed positioning to keep the background image in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+.reservation-form{
+    position: relative; /* Ensure content is stacked above the background */
+    z-index: 1;
+}

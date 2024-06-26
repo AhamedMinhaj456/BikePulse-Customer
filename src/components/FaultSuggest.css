@@ -1,0 +1,158 @@
+ 
+  .suggestion-content {
+    display: flex;
+    align-items: center; 
+    background-color: #0A0B7B;
+    padding: 3%;
+  }
+  
+  .suggestion-img {
+    margin-left: auto;
+    margin-right: 10%; 
+  }
+
+  .suggestion-content-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  .suggestion-content-overlay{
+    background-color: #E4EFF5;
+    padding: 3%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+  .suggestion-form-text{
+    text-align: center;
+    margin-top: 2%;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+  }
+  .fault-text{
+    font-family: "Poppins", sans-serif; 
+    font-size: 1rem;
+    margin-left: 10%;
+    padding-top: 2%;
+  }
+  .fault-button-form,
+  .comment-button{
+  
+   width: 15%;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10%;
+ background-color: #ADE7F3;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #03045E;
+    margin-top: 4%;
+    margin-left: 45%;
+    
+  }
+  .fault-dropdown{
+    background-color:#05b1d3;
+    border: none;
+    margin-left: 10%;
+    width: 20%;
+    outline: none;
+    
+    
+    
+  }
+  .fault-dropdown::placeholder {
+    color: #888888; 
+}
+.dropdown-button-container {
+    display: flex;
+    
+  
+    
+}
+.comment-text{
+    font-family: "Poppins", sans-serif;
+    font-weight:900;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    text-align: center;
+}
+
+
+    .comment-box {
+        width: 40%;
+        height: 30%; 
+        padding: 5%;
+        margin-top: 3%;
+        resize: vertical; 
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        background-color: #F5FBFF;
+        margin-left: 30%;
+        outline: none;
+    }
+    
+    .comment-box::placeholder {
+        color: #888888;
+    }
+
+    .parts-container ,
+    .faults-sub-container{
+        
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .boxes-container,
+    .shops-suggest-container {
+        display: flex;
+        justify-content: center;
+        width: 80%; 
+        margin-left: 10%;
+    }
+    
+    .box {
+        width: calc(33.33% - 10px); 
+        height: 200px;
+        background-color: #F5FBFF; 
+        margin: 0 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        
+    }
+    @media screen and (max-width: 768px){
+        .suggestion-content{
+       
+            height: 20%;
+        }
+        .suggestion-content-text{
+            font-size:medium;
+           text-align: center;
+        }
+         .suggestion-img{
+        display: none;
+        }
+        .comment-button{
+            width: 20%;
+        }
+        .suggestion-content-overlay-text{
+            text-align: center;
+            font-size: small;
+        }
+        .faults-sub-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%; 
+            margin-left: 0; 
+          }
+
+    }
+    
+    
+

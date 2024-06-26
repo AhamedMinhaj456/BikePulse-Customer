@@ -1,0 +1,104 @@
+.navbar-container {
+    background-color: #bfe9ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px; 
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 120px; 
+    width: auto; 
+}
+
+.brand-text {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgb(3, 4, 94) 0%, rgb(0, 119, 182) 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links .nav-link {
+    margin-left: 40px; 
+    color: #03045e;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.navbar-links .nav-link:hover {
+    color: rgb(59, 53, 150); 
+}
+.login-button {
+    background-color: #03045e;
+    border-radius: 30px;
+    height: 35px;
+    width: 135px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; 
+   margin-top: 1px;
+}
+.login-button:hover {
+    color: rgb(162, 162, 166);
+}
+.bi-bi-person-circle{
+    font-size: 30px !important;
+    position: absolute;
+    top: 25px;
+    margin-left: 30px;
+    font-size: 60px ; 
+    color: #03045e;
+  }
+  @media screen and (max-width: 768px) {
+    .navbar-container {
+        height: auto;
+        flex-direction: column; 
+        padding: 20px; 
+    }
+
+    .navbar-links {
+        margin-top: 2px; 
+        justify-content: center;
+    }
+
+    .navbar-links .nav-link {
+        margin: 10px; 
+    }
+}
+
+.home-customer-text{
+    color: #09090a;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    
+}
+.profile {
+    height: 30px; 
+    width: auto;
+    margin-left: 12px; 
+    fill: #03045e;
+    cursor: pointer;
+}
+
+
