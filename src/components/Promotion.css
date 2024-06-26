@@ -1,0 +1,149 @@
+.promotion-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.promotion-header {
+    margin-bottom: 20px;
+}
+
+.promotion-header h1 {
+    font-size: 36px;
+    color: #3e2093;
+}
+
+.promotion-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.promotion-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.promotion-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.promotion-card i {
+    font-size: 50px;
+    color: #3e2093;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.promotion-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.promotion-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.promotion-card:hover {
+    transform: translateY(-10px);
+}
+
+.promotion-card:hover i {
+    color: #5029bc;
+}
+
+@media (max-width: 768px) {
+    .promotion-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .promotion-card {
+        width: 80%;
+    }
+}
+
+.shop-promotion-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.shop-promotion-header {
+    margin-bottom: 20px;
+}
+
+.shop-promotion-header h1 {
+    font-size: 36px;
+    color: #3e2093;
+}
+
+.shop-promotion-header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.shop-promotion-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.shop-promotion-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.shop-promotion-card i {
+    font-size: 50px;
+    color: #3e2093;
+    margin-bottom: 15px;
+    transition: color 0.3s;
+}
+
+.shop-promotion-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.shop-promotion-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.shop-promotion-card:hover {
+    transform: translateY(-10px);
+}
+
+.shop-promotion-card:hover i {
+    color: #5029bc;
+}
+
+@media (max-width: 768px) {
+    .shop-promotion-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .shop-promotion-card {
+        width: 80%;
+    }
+}
