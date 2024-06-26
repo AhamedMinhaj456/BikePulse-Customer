@@ -28,3 +28,13 @@
 .privacy-policy section {
     margin-bottom: 20px;
 }
+
+.contact-link {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}

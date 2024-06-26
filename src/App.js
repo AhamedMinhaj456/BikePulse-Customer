@@ -46,6 +46,7 @@ import FileUpload from "./components/FileUpload"
 import './App.css';
 import { Provider } from "react-redux";
 import store  from "./Store/Store";
+import CustomerAgreement from "./components/CusomerAgreement";
 
 
 
@@ -162,6 +163,7 @@ function App() {
         <Route path="/shop-home" element={<ShopHome/>}/>
         <Route path="/file-upload" element={<FileUpload/>}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+        <Route path="/agreement" element={<CustomerAgreement/>}/>
         
         {/* Dashboard Routes */}
         <Route path="/*" element={<DashboardLayout />} />

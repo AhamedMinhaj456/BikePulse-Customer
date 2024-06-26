@@ -1,5 +1,7 @@
 import React from "react";
 import './PrivacyPolicy.css';
+import { Link } from "react-router-dom";
+
 
 
 const PrivacyPolicy = () => {
@@ -45,10 +47,8 @@ const PrivacyPolicy = () => {
 
             <section>
                 <h2>8. Contact Us</h2>
-                <p>If you have questions or comments about this policy, you may contact us by email at [Contact Email] or by post to:</p>
-                <p>BikePulse</p>
+                <p>If you have questions or comments about this policy, you may contact us by email at <a href="/aboutus" className="contact-link">contact us</a> or by post to:</p>
                
-                <p>Sri Lanka</p>
             </section>
         </div>
     );

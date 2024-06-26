@@ -37,7 +37,7 @@ function Footer() {
         <div className="footer-col">
           <h4>Legal</h4>
           <ul className="links">
-            <li><Link to="/aboutus">Customer Agreement</Link></li>
+            <li><Link to="/agreement">Customer Agreement</Link></li>
             <li><Link to="/privacypolicy">Privacy Policy</Link></li>
             
             <li><Link to="/aboutus">Security</Link></li>
