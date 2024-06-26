@@ -9,7 +9,6 @@
   .AboutUsimg { 
     width: 70%;
     height: 80%;
-    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -17,7 +16,7 @@
   }
   
   .aboutus-container {
-    /* background-image: url(https://i.pinimg.com/564x/5d/c6/6c/5dc66c4ebe821b2645e4915703ea05a0.jpg); */
+    
     display: flex;
     justify-content: center;
     align-items: center;
