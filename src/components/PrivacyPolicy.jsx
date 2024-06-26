@@ -1,6 +1,7 @@
 import React from "react";
 import './PrivacyPolicy.css';
-import { Link } from "react-router-dom";
+
+const currentDate = new Date().toLocaleDateString(  );
 
 
 
@@ -8,6 +9,7 @@ const PrivacyPolicy = () => {
     return (
         <div className="privacy-policy">
             <h1>Privacy Policy</h1>
+            <p>Effective Date : {currentDate}</p>
             
             
             <section>

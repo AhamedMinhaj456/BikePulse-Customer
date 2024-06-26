@@ -2,13 +2,15 @@ import React from 'react';
 import './CustomerAgreement.css';
 
 const CustomerAgreement = () => {
+    const currentDate = new Date().toLocaleDateString();
+
     return (
         <div className="customer-agreement">
-            <div className="header">
+            <div className="agreement-header">
                 <h1>Customer Agreement</h1>
-                <p>Effective Date: [Insert Date]</p>
+                <p>Effective Date: {currentDate}</p>
             </div>
-            <div className="content">
+            <div className="agreement-content">
                 <section>
                     <h2>1. Introduction</h2>
                     <p>Welcome to Bike Pulse. This Customer Agreement ("Agreement") governs your use of our platform and services. By accessing or using our platform, you agree to be bound by this Agreement.</p>
@@ -49,7 +51,11 @@ const CustomerAgreement = () => {
                     <p>We may update this Agreement from time to time. The updated version will be indicated by an updated "Effective Date" and the updated version will be effective as soon as it is accessible.</p>
                 </section>
 
-                
+                <section>
+                    <h2>9. Contact Us</h2>
+                    <p>If you have any questions or concerns about this Agreement, please <a href="/aboutus" className="contact-link-agreement">contact us</a> by email at [Contact Email] or by post at:</p>
+                    
+                </section>
             </div>
         </div>
     );
