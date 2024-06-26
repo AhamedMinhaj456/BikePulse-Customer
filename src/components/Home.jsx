@@ -243,7 +243,7 @@ const fetchFeedbackData = async () => {
     
     <p className='testimonial'>Testimonials</p>
     <p className='testimonial-client-text'>WHAT ARE CLIENTS SAY</p>
-    <div className="wrapper-testimonial">
+  
       {/* {testimonialData.map(testimonial => (
         <div key={testimonial.testid} className="box-testimonial">
           <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
@@ -260,41 +260,60 @@ const fetchFeedbackData = async () => {
           </div>
         </div>
       ))} */}
-      
-        <div className="box-testamonial">
-        <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
-
-          <p>"What I love most about BikePulse is their all-in-one approach. Not only can I easily rent a bike for my weekend adventures, but I can also schedule repairs through their online platform. It's incredibly convenient and saves me so much time. BikePulse has definitely become my go-to for all things cycling!"</p>
-          <div className="content-testamonial">
-            <div className="info-testamonial">
-              <div className="name-testamonial">John Doe</div>
-              <div className="job-testamonial">Job Title</div>
-              <div className="stars-testamonial">
-              <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={farStar} />
-              </div>
-            </div>
-            <div className="image-testamonial">
-              <img src={card1} alt="Profile" />
-            </div>
-          </div>
-        </div>
+      <div className="wrapper-testamonial">
       <div className="box-testamonial">
-      <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
-
-        <p>"BikePulse has made managing my bike repairs a breeze. Their platform connects me with trusted service shops, and I can easily schedule appointments and track the progress of my repairs. It's a game-changer!"</p>
+        <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
+        <p>"What I love most about BikePulse is their all-in-one approach. Not only can I easily rent a bike for my weekend adventures, but I can also schedule repairs through their online platform. It's incredibly convenient and saves me so much time. BikePulse has definitely become my go-to for all things cycling!"</p>
         <div className="content-testamonial">
           <div className="info-testamonial">
             <div className="name-testamonial">John Doe</div>
             <div className="job-testamonial">Job Title</div>
             <div className="stars-testamonial">
-            <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
-              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+            </div>
+          </div>
+          <div className="image-testamonial">
+            <img src={card1} alt="Profile" />
+          </div>
+        </div>
+      </div>
+
+      <div className="box-testamonial">
+        <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
+        <p>"BikePulse has made managing my bike repairs a breeze. Their platform connects me with trusted service shops, and I can easily schedule appointments and track the progress of my repairs. It's a game-changer!"</p>
+        <div className="content-testamonial">
+          <div className="info-testamonial">
+            <div className="name-testamonial">Jane Smith</div>
+            <div className="job-testamonial">Job Title</div>
+            <div className="stars-testamonial">
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+            </div>
+          </div>
+          <div className="image-testamonial">
+            <img src={card1} alt="Profile" />
+          </div>
+        </div>
+      </div>
+      <div className="box-testamonial">
+        <FontAwesomeIcon icon={faQuoteLeft} className="quote" />
+        <p>"BikePulse has made managing my bike repairs a breeze. Their platform connects me with trusted service shops, and I can easily schedule appointments and track the progress of my repairs. It's a game-changer!"</p>
+        <div className="content-testamonial">
+          <div className="info-testamonial">
+            <div className="name-testamonial">Jane Smith</div>
+            <div className="job-testamonial">Job Title</div>
+            <div className="stars-testamonial">
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
+              <FontAwesomeIcon icon={farStar} />
               <FontAwesomeIcon icon={farStar} />
             </div>
           </div>

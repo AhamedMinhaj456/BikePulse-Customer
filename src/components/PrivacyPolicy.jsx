@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
 
             <section>
                 <h2>8. Contact Us</h2>
-                <p>If you have questions or comments about this policy, you may contact us by email at <a href="/aboutus" className="contact-link">contact us</a> or by post to:</p>
+                <p>If you have questions or comments about this policy, you may contact us by email at <a href="/contact" className="contact-link">contact us</a> or by post to:</p>
                
             </section>
         </div>

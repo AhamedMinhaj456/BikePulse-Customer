@@ -19,7 +19,7 @@ function Footer() {
           <ul class="links">
           <li><Link to="/">Home</Link></li>
             <li><Link to="/shops">Shops</Link></li>
-            <li><Link to="/promotions">Promotions</Link></li>
+            <li><Link to="/promotion">Promotions</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/aboutus">About Us</Link></li>
           </ul>

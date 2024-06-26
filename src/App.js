@@ -47,6 +47,8 @@ import './App.css';
 import { Provider } from "react-redux";
 import store  from "./Store/Store";
 import CustomerAgreement from "./components/CusomerAgreement";
+import ContactUs from "./components/ContactUs";
+import Promotion from "./components/Promotions";
 
 
 
@@ -164,6 +166,8 @@ function App() {
         <Route path="/file-upload" element={<FileUpload/>}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
         <Route path="/agreement" element={<CustomerAgreement/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/promotion" element={<Promotion/>}/>
         
         {/* Dashboard Routes */}
         <Route path="/*" element={<DashboardLayout />} />
