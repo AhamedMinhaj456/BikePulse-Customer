@@ -144,7 +144,7 @@ const fetchFeedbackData = async () => {
           </br>Backed by a commitment to excellence, BikePulse redefines the cycling experience, empowering riders to explore with confidence and ease.</p> */}
         <div className='homen-button'>
            
-            <a href='http://localhost:3003/' > REGISTER SHOP 
+            <a href='https://bikepulse-shop.vercel.app/' > REGISTER SHOP 
             <img src={registershop} alt="Reserve Now Icon" className="reserve-now-icon" onClick={handleRegisterClick} /></a>
             <a href='/shops'>RESERVE NOW
             <img src={reservenow}  alt="Reserve Now Icon" className="reserve-now-icon" onClick={handleReserveClick}/></a>
