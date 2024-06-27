@@ -289,16 +289,24 @@ const fetchFeedbackData = async () => {
         <p>
           <i className="fa fa-phone" aria-hidden="true" /> {shop.contactNumber}
         </p>
-         <p>
-          <img src={require('../assets/location.png')} alt="Location Image" />
-          <a href="#" className="direction-link">Get Direction</a>
-        </p> 
+        <p>
+                <FaClock /> {shop.openingTime} - {shop.closingTime}
+              </p>
+              {shop.status === "Opened" && <p>Open</p>}
+              {shop.status === "Closing Soon" && <p>Closing Soon</p>}
+              {shop.status === "Closed" && (
+                <p>Shop Closed Now Next Open: {shop.nextOpenTime}</p>
+              )}
+                        <div className="details-button">
+                        
+                            <button className="button-view" onClick={() => handleReserveClick(shop.shopId)}
+                            >Reserve Now</button>
+                        </div>
+                    </div>
+      ))}
         
-        <div className="details-content">
-          {/* Additional shop details here */}
-        </div>
-      </div>
-    ))}
+      
+    
   </div>
 </div>
 
