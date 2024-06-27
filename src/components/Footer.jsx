@@ -31,6 +31,8 @@ function Footer() {
             <li><Link to="/aboutus">Top Cities</Link></li>
             <li><Link to="/aboutus">All Cities</Link></li>
             <li><Link to="/aboutus">Shop instructions</Link></li>
+            <li><Link to="https://bikepulse-shop.vercel.app/">Shop Flow</Link></li>
+            
             
           </ul>
         </div>
@@ -42,6 +44,7 @@ function Footer() {
             
             <li><Link to="/aboutus">Security</Link></li>
             <li><Link to="/aboutus">Testimonials</Link></li>
+            <li><Link to="https://bikepulse-admin.vercel.app/">Admin Flow</Link></li>
           
           </ul>
         </div>
