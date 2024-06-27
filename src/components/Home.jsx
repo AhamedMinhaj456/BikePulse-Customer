@@ -1,5 +1,6 @@
 import React, { useEffect, useRef ,useState } from 'react';
 import './Home.css'; 
+import { FaClock } from "react-icons/fa";
 import card1 from "../assets/service1.jpg";
 import reservenow from "../assets/reserve_now.png"
 import registershop from "../assets/register_shop.png"
@@ -128,6 +129,97 @@ const fetchFeedbackData = async () => {
 };
 
 
+
+
+    // for shop open close status
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        // Update shop status every minute
+        setShops((prevShops) =>
+          prevShops.map((shop) => {
+            return {
+              ...shop,
+              status: getShopStatus(shop.openingTime, shop.closingTime),
+              nextOpenTime: getNextOpenTime(shop.openingTime)
+            };
+          })
+        );
+      }, 60); // Update every minute
+      return () => clearInterval(interval);
+    }, []);
+  
+    const getCurrentTime = () => {
+      const currentTime = new Date();
+      return (
+        currentTime.getHours() +
+        ":" +
+        (currentTime.getMinutes() < 10 ? "0" : "") +
+        currentTime.getMinutes()
+      );
+    };
+  
+    const getShopStatus = (openingTime, closingTime) => {
+      if (!openingTime || !closingTime) {
+        return "Closed"; // Handle undefined or null values gracefully
+      }
+    
+      const currentTime = getCurrentTime();
+      if (currentTime >= openingTime && currentTime <= closingTime) {
+        return "Opened";
+      } else if (isOpeningSoon(closingTime)) {
+        return "Closing Soon";
+      } else if (currentTime < openingTime) {
+        return "Closed";
+      } else {
+        return "Closed"; // Shop is closed, next opening time is already handled
+      }
+    };
+    
+    const isOpeningSoon = (closingTime) => {
+      if (!closingTime) {
+        return false; // Handle undefined or null values gracefully
+      }
+    
+      const currentTime = new Date();
+      const closingHour = parseInt(closingTime.split(":")[0], 10);
+      const closingMinute = parseInt(closingTime.split(":")[1], 10);
+      const closingTimeObj = new Date();
+      closingTimeObj.setHours(closingHour, closingMinute, 0, 0);
+      const timeDifference = closingTimeObj - currentTime;
+      return timeDifference > 0 && timeDifference <= 60 * 60 * 1000; // Check if closing time is within 60 minutes
+    };
+    
+    const getNextOpenTime = (openingTime) => {
+      if (!openingTime) {
+        return ""; // Handle undefined or null values gracefully
+      }
+    
+      const nextOpenTime = new Date();
+      const currentHour = nextOpenTime.getHours();
+      const openingHour = parseInt(openingTime.split(":")[0], 10);
+      if (currentHour < openingHour) {
+        nextOpenTime.setHours(openingHour);
+        nextOpenTime.setMinutes(0);
+        nextOpenTime.setSeconds(0);
+        return nextOpenTime.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+      } else {
+        nextOpenTime.setDate(nextOpenTime.getDate() + 1);
+        nextOpenTime.setHours(openingHour);
+        nextOpenTime.setMinutes(0);
+        nextOpenTime.setSeconds(0);
+        return nextOpenTime.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit"
+        });
+      }
+    };
+    
+
+
   return (
     <div className='homen-page-container'>
    
@@ -167,15 +259,21 @@ const fetchFeedbackData = async () => {
         <p>
           <i className="fa fa-phone" aria-hidden="true" /> {shop.contactNumber}
         </p>
-        {/* <p>
-          <img src={require('../assets/location.png')} alt="Location Image" />
-          <a href="#" className="direction-link">Get Direction</a>
-        </p> */}
-        <div className="details-content">
-          {/* Additional shop details here */}
-        </div>
-      </div>
-    ))}
+        <p>
+                <FaClock /> {shop.openingTime} - {shop.closingTime}
+              </p>
+              {shop.status === "Opened" && <p>Open</p>}
+              {shop.status === "Closing Soon" && <p>Closing Soon</p>}
+              {shop.status === "Closed" && (
+                <p>Shop Closed Now Next Open: {shop.nextOpenTime}</p>
+              )}
+                        <div className="details-button">
+                        
+                            <button className="button-view" onClick={() => handleReserveClick(shop.shopId)}
+                            >Reserve Now</button>
+                        </div>
+                    </div>
+      ))}
   </div>
   
   <div className="cards-container">

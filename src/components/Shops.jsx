@@ -249,12 +249,12 @@ function Shops() {
                     <p>
                         <i className="fa fa-phone" aria-hidden="true" /> {shop.contactNumber}
                     </p>
-                    <p>
+                    {/* <p>
                         <img src={require('../assets/location.png')} alt="Location Image" />
                         <a href="#" className="direction-link">
                         Get Direction
                         </a>
-                    </p>
+                    </p> */}
                     <div className="details-content">
                     <p>
                 <FaClock /> {shop.openingTime} - {shop.closingTime}

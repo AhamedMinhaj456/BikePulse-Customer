@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 const ManageReservations = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-  const customerId = useSelector((state) => state.customerId);
+  const customerId = useSelector((state) => state.customers);
   const [reservationDetails, setReservationDetails] = useState([]);
   const [selectedReservationId, setSelectedReservationId] = useState(null);
 

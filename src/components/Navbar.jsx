@@ -6,10 +6,14 @@ import logoImage from '../../src/assets/bike2.png';
 import { ReactComponent as ProfileIcon } from '../assets/profile.svg';
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import axios from "axios";
+import { clearCustomerId,clearCustomerStatus } from "../Slices/CustomerSlice";
+
 
 function Navbar() {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const customerStatus = useSelector((state) => state.customerStatus);
     const customerId = useSelector((state) => state.customers);
     const [customer, setCustomer] = useState(null);
@@ -19,12 +23,11 @@ function Navbar() {
     };
 
     const handleLogout = () => {
-        // Implement logout logic here, e.g., clear localStorage, dispatch logout action, etc.
-        // For demonstration purposes, let's clear customerId and customerStatus in localStorage
-        localStorage.removeItem('customerId');
-        localStorage.removeItem('customerStatusId');
-        // Redirect to login or home page after logout
+        
+        dispatch(clearCustomerId());
+        dispatch(clearCustomerStatus());
         navigate("/");
+        window.location.reload()
     };
 
     const fetchCustomerData = async () => {
