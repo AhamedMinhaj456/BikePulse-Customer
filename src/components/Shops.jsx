@@ -109,6 +109,10 @@ function Shops() {
   };
 
   const getShopStatus = (openingTime, closingTime) => {
+    if (!openingTime || !closingTime) {
+      return "Closed"; // Handle undefined or null values gracefully
+    }
+  
     const currentTime = getCurrentTime();
     if (currentTime >= openingTime && currentTime <= closingTime) {
       return "Opened";
@@ -120,8 +124,12 @@ function Shops() {
       return "Closed"; // Shop is closed, next opening time is already handled
     }
   };
-
+  
   const isOpeningSoon = (closingTime) => {
+    if (!closingTime) {
+      return false; // Handle undefined or null values gracefully
+    }
+  
     const currentTime = new Date();
     const closingHour = parseInt(closingTime.split(":")[0], 10);
     const closingMinute = parseInt(closingTime.split(":")[1], 10);
@@ -130,8 +138,12 @@ function Shops() {
     const timeDifference = closingTimeObj - currentTime;
     return timeDifference > 0 && timeDifference <= 60 * 60 * 1000; // Check if closing time is within 60 minutes
   };
-
+  
   const getNextOpenTime = (openingTime) => {
+    if (!openingTime) {
+      return ""; // Handle undefined or null values gracefully
+    }
+  
     const nextOpenTime = new Date();
     const currentHour = nextOpenTime.getHours();
     const openingHour = parseInt(openingTime.split(":")[0], 10);
@@ -154,6 +166,7 @@ function Shops() {
       });
     }
   };
+  
 
     return (
         <div className="shops-container">

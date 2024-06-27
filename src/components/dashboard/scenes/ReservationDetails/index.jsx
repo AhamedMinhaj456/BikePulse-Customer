@@ -87,7 +87,7 @@ const ReservationDetails = ({ reservationId }) => {
           <Box sx={{ gridColumn: "span 2", display: "flex", alignItems: "center" }}>
             <Grid container>
               <Grid item xs={6}>
-                <Typography variant="h6" className="detail-title">Reservation Address:</Typography>
+                <Typography variant="h6" className="detail-title">Reservation Note:</Typography>
               </Grid>
               <Grid item xs={6}>
                 <Typography variant="body1" className="detail-value">{reservation.reservationAddress}</Typography>

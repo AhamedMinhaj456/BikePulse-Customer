@@ -2,7 +2,8 @@
 
 import { configureStore } from "@reduxjs/toolkit";
 import customerReducer from '../Slices/CustomerSlice.js';
-import shopReducer from '../Slices/ShopSlice.js'; 
+import shopReducer from '../Slices/ShopSlice.js';
+import { customerIdReducer, customerStatusReducer } from '../Slices/CustomerSlice.js'; // Import customer reducers
 
 const loadState = (key) => {
     try {
@@ -22,6 +23,9 @@ const saveState = (state) => {
         const serializedCustomersState = JSON.stringify(state.customers);
         localStorage.setItem('customerId', serializedCustomersState);
 
+        const serializedCustomerStatusState = JSON.stringify(state.customerStatus); // Save customerStatus state
+        localStorage.setItem('customerStatusId', serializedCustomerStatusState);
+
         const serializedShopsState = JSON.stringify(state.shops);
         localStorage.setItem('shopId', serializedShopsState);
     } catch (err) {
@@ -38,11 +42,13 @@ const localStorageMiddleware = store => next => action => {
 const store = configureStore({
     devTools: true,
     reducer: {
-        customers: customerReducer,
+        customers: customerIdReducer,
+        customerStatus: customerStatusReducer, // Add customerStatus reducer
         shops: shopReducer
     },
     preloadedState: {
         customers: loadState('customerId'),
+        customerStatus: loadState('customerStatusId'), // Load customerStatus from localStorage
         shops: loadState('shopId')
     },
     middleware: (getDefaultMiddleware) =>

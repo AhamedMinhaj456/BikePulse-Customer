@@ -1,36 +1,47 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-// Load initial state from local storage
-const loadState = () => {
+const loadState = (key) => {
     try {
-        const serializedState = localStorage.getItem('customerId');
-        if (serializedState === null) {
-            return "";
-        }
-        return JSON.parse(serializedState);
+        const serializedState = localStorage.getItem(key);
+        return serializedState ? JSON.parse(serializedState) : null;
     } catch (err) {
-        return "";
+        console.error("Error loading state from local storage:", err);
+        return null;
     }
 };
 
-// Customer slice
-const initialState = loadState() || "";
+// Initial state loader functions
+const initialCustomerIdState = loadState('customerId') || "";
+const initialCustomerStatusState = loadState('customerStatus') || ""; 
 
-const customerSlice = createSlice({
+const customerIdSlice = createSlice({
     name: 'customerId',
-    initialState,
+    initialState: initialCustomerIdState,
     reducers: {
         addCustomerId(state, action) {
             return action.payload;
         },
-        deleteCustomerId(state, action) {
-            return "";
-        },
-        clearStorage(state) {
+        clearCustomerId(state) {
             return "";
         }
     }
 });
 
-export const { addCustomerId, deleteCustomerId, clearStorage } = customerSlice.actions;
-export default customerSlice.reducer;
+const customerStatusSlice = createSlice({
+    name: 'customerStatus',
+    initialState: initialCustomerStatusState,
+    reducers: {
+        addCustomerStatus(state, action) {
+            return action.payload;
+        },
+        clearCustomerStatus(state) {
+            return "";
+        }
+    }
+});
+
+export const { addCustomerId, clearCustomerId } = customerIdSlice.actions;
+export const { addCustomerStatus, clearCustomerStatus } = customerStatusSlice.actions;
+
+export const customerIdReducer = customerIdSlice.reducer;
+export const customerStatusReducer = customerStatusSlice.reducer;

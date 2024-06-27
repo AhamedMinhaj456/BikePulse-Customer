@@ -51,97 +51,8 @@ import ContactUs from "./components/ContactUs";
 import Promotion from "./components/Promotions";
 
 
-
-//import { Navbar } from "react-bootstrap";
-
-
-/*function App() {
-  const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true);
- 
-
-  return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/shops" element={<Shops />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/faultsuggest" element={<FaultSuggest />} />
-          <Route path="/reservation" element={<Reservation />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/account-setting" element={<Settings />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/forgotpw" element={<ForgotPw />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/fault" element={<Fault />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-      </div>
-      
-    <Provider store={store}>
-      <Router>
-        <div>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/aboutus" element={<Aboutus />} />
-            <Route path="/shops" element={<Shops />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/faultsuggest" element={<FaultSuggest />} />
-            <Route path="/reservation" element={<Reservation />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/account-setting" element={<Settings />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/forgotpw" element={<ForgotPw />} />
-            <Route path="/payment" element={<Payment />} />
-            <Route path="/fault" element={<Fault />} />
-            <Route path="/cart" element={<Cart />} />
-          </Routes>
-        </div>
-
-        <Footer />
-      </Router>
-      <div>
-      <Router>
-      
-      
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={theme}>
-          <CssBaseline />
-          <div className="app">
-            <Sidebar isSidebar={isSidebar} />
-            <main className="app-content">
-            <Topbar setIsSidebar={setIsSidebar} />
-            <Routes>
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/manageReservations" element={<ManageReservations />} />
-              <Route path="/history" element={<ReservationHistory />} />
-              <Route path="/payment-reservations" element={<PaymentReservations />} />
-              <Route path="/form" element={<Form />} />
-              <Route path="/bar" element={<Bar />} />
-              <Route path="/pie" element={<Pie />} />
-              <Route path="/line" element={<Line />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/calendar" element={<Calendar />} />
-              <Route path="/geography" element={<Geography />} />
-              <Route path="/chatbot" element={<Chatbot/>}/>
-            </Routes>
-            </main>
-          </div>
-        </ThemeProvider>
-      </ColorModeContext.Provider>
-      
-      </Router>
-      </div>
-    </Provider>
-  );
-}
-
-
-export default App;*/
+import AuthProvider from "./Utils/AuthProvider";
+import ProtectedRoute from "./Utils/ProtecedRoute"; 
 
 function App() {
   return (
@@ -149,28 +60,40 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+
+
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/forgotpw" element={<ForgotPw />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+        <Route path="/agreement" element={<CustomerAgreement/>}/>
+        <Route path="/contact" element={<ContactUs/>}/>
+        <Route path="/promotion" element={<Promotion/>}/>
         <Route path="/shops" element={<Shops />} />
         <Route path="/login" element={<Login />} />
+
+        <Route element={<ProtectedRoute/>}>
+        
+        
+        
         <Route path="/faultsuggest" element={<FaultSuggest />} />
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/account-setting" element={<Settings />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/forgotpw" element={<ForgotPw />} />
+        
+        
         <Route path="/payment" element={<Payment />} />
         <Route path="/fault" element={<Fault />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop-home" element={<ShopHome/>}/>
         <Route path="/file-upload" element={<FileUpload/>}/>
-        <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
-        <Route path="/agreement" element={<CustomerAgreement/>}/>
-        <Route path="/contact" element={<ContactUs/>}/>
-        <Route path="/promotion" element={<Promotion/>}/>
+        
         
         {/* Dashboard Routes */}
         <Route path="/*" element={<DashboardLayout />} />
+
+        </Route>
       </Routes>
       <Footer />
     </Router>

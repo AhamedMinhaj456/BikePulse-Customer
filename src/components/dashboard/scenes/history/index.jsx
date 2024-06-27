@@ -77,7 +77,7 @@ const ReservationHistory = () => {
     },
     {
       field: "reservationAddress",
-      headerName: "Reservation Address",
+      headerName: "Reservation Note",
       flex: 2,
     },
     {
