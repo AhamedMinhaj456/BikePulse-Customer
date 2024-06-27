@@ -30,12 +30,16 @@
 }
 
 a.facebook {
-    color: #fff;
-    background-color: #4267b2;
+    color: black;
+    background-color: #fff;
+    font-weight: 500;
 }
 
 a.google {
     border: 1px solid #CACACA;
+    background-color: #fff;
+    color: black;
+    font-weight: 500;
 }
 
 .facebook-icon,

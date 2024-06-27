@@ -19,7 +19,7 @@ import john from "../assets/John_Morgan.jpg"
 import nia from "../assets/Nia_Adebayo.jpg"
 import rigo from "../assets/Rigo_Louie.jpg"
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
 
 //import '../../node_modules/swiper/swiper-bundle.min.js';
 //import '../../node_modules/swiper/swiper-bundle.min.css';
@@ -161,16 +161,16 @@ const fetchFeedbackData = async () => {
           <img src={require('../assets/bike9.jpg')} alt="Card1" />
         </div>
         <h1 className="card-heading">{shop.shopName}</h1>
-        <p>
+         <p>
           <i className="fa fa-location-arrow" aria-hidden="true" /> {shop.shopAddress}
-        </p>
+        </p> 
         <p>
           <i className="fa fa-phone" aria-hidden="true" /> {shop.contactNumber}
         </p>
-        <p>
+        {/* <p>
           <img src={require('../assets/location.png')} alt="Location Image" />
           <a href="#" className="direction-link">Get Direction</a>
-        </p>
+        </p> */}
         <div className="details-content">
           {/* Additional shop details here */}
         </div>
@@ -191,10 +191,11 @@ const fetchFeedbackData = async () => {
         <p>
           <i className="fa fa-phone" aria-hidden="true" /> {shop.contactNumber}
         </p>
-        <p>
+         <p>
           <img src={require('../assets/location.png')} alt="Location Image" />
           <a href="#" className="direction-link">Get Direction</a>
-        </p>
+        </p> 
+        
         <div className="details-content">
           {/* Additional shop details here */}
         </div>
@@ -266,8 +267,8 @@ const fetchFeedbackData = async () => {
         <p>"What I love most about BikePulse is their all-in-one approach. Not only can I easily rent a bike for my weekend adventures, but I can also schedule repairs through their online platform. It's incredibly convenient and saves me so much time. BikePulse has definitely become my go-to for all things cycling!"</p>
         <div className="content-testamonial">
           <div className="info-testamonial">
-            <div className="name-testamonial">John Doe</div>
-            <div className="job-testamonial">Job Title</div>
+            <div className="name-testamonial">Nirasha Morais</div>
+            <div className="job-testamonial">Engineer</div>
             <div className="stars-testamonial">
               <FontAwesomeIcon icon={farStar} />
               <FontAwesomeIcon icon={farStar} />
@@ -287,8 +288,8 @@ const fetchFeedbackData = async () => {
         <p>"BikePulse has made managing my bike repairs a breeze. Their platform connects me with trusted service shops, and I can easily schedule appointments and track the progress of my repairs. It's a game-changer!"</p>
         <div className="content-testamonial">
           <div className="info-testamonial">
-            <div className="name-testamonial">Jane Smith</div>
-            <div className="job-testamonial">Job Title</div>
+            <div className="name-testamonial">Mahesha Prasadi</div>
+            <div className="job-testamonial">Business Analyst</div>
             <div className="stars-testamonial">
               <FontAwesomeIcon icon={farStar} />
               <FontAwesomeIcon icon={farStar} />
@@ -307,8 +308,8 @@ const fetchFeedbackData = async () => {
         <p>"BikePulse has made managing my bike repairs a breeze. Their platform connects me with trusted service shops, and I can easily schedule appointments and track the progress of my repairs. It's a game-changer!"</p>
         <div className="content-testamonial">
           <div className="info-testamonial">
-            <div className="name-testamonial">Jane Smith</div>
-            <div className="job-testamonial">Job Title</div>
+            <div className="name-testamonial">Praveen Shymal</div>
+            <div className="job-testamonial">Manager</div>
             <div className="stars-testamonial">
               <FontAwesomeIcon icon={farStar} />
               <FontAwesomeIcon icon={farStar} />
@@ -458,7 +459,7 @@ const fetchFeedbackData = async () => {
         </video>
         <div className='video-content'>
           <h1>Explore More</h1>
-          <a href='#' >Start Searching</a>
+          <Link to="/shops" >Start Searching</Link>
         </div>
 
         </div>

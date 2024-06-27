@@ -3,7 +3,7 @@ import { Box, Typography, Paper, Grid } from '@mui/material';
 import Header from '../components/dashboard/components/Header';
 import './ServicesPrices.css';
 import axios from 'axios';
-
+  
 const ServicePrices = ({ reservationId }) => {
   const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);

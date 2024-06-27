@@ -53,6 +53,8 @@ import Promotion from "./components/Promotions";
 
 import AuthProvider from "./Utils/AuthProvider";
 import ProtectedRoute from "./Utils/ProtecedRoute"; 
+import ServicePrices from "./components/ServicesPrices";
+
 
 function App() {
   return (
@@ -88,6 +90,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/shop-home" element={<ShopHome/>}/>
         <Route path="/file-upload" element={<FileUpload/>}/>
+        <Route path="/services-prices" element={<ServicePrices/>}/>
         
         
         {/* Dashboard Routes */}

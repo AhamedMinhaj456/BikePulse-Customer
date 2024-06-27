@@ -273,10 +273,7 @@ function Shops() {
                     </div>
                 ))}
                 </div>
-                
-                <div className="show-more-button-container">
-                    <button className="show-more-button">Show More</button>
-                </div>
+               
                 <div className="shop-bottom-text">
                     Discover the best bike service shops near you! Explore a curated list of trusted and reliable service providers on the BikePulse<br></br> platform. From quick repairs to top-notch maintenance, our featured shops are here to keep your ride in peak condition. <br></br>Scroll through and find the perfect match for your biking needs!
                 </div>
